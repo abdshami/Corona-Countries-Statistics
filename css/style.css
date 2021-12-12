@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: 0.3s;
+}
+
+body{
+    width: 100%;
+    background-color: #eee;
+
+}
+
+.buttons{
+    margin-top: 20px;
+}
+
+.buttons button{
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    font-size: 15px;
+    background:#c1e0de ;
+    border-radius: 5px;
+    
+    
+}
+
+.buttons button:hover{
+  background: #26a69a;
+  color: white;
+    
+}
+
+.statistics{
+    width: 90%;
+    min-height: 50vh;
+    border: 2px solid #26a69a;
+    margin: auto;
+}
+
+ .title{
+     margin-top: 40px;
+}
+
+.search{
+    max-width: 400px;
+    width:100%;
+    height: 40px;
+    background: #fff;
+    position: relative;
+    margin: 2rem 0;
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+.search .textSearch{
+   position: absolute;
+   top:0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   outline: none;
+   padding: 1rem 1.5rem;
+   font-size: 1.2rem;
+   border: none;
+}
+
+.container{
+    max-width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+  #coronaTable {
+    border-collapse: collapse; 
+    width: 100%;
+    min-height: 50%;
+    border-radius: 10px;
+    margin: auto;
+    background: #e0f2f1;
+    font-size: 18px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    overflow: auto;
+  }
+  
+  #coronaTable th, #coronaTable td {
+    text-align: left;
+    padding: 1rem 4px;
+   
+
+  }
+
+  #coronaTable th{
+    background: #26a69a;
+    padding: 1.2rem 0; 
+   color: white;
+    text-align: center;
+  }
+  
+  #coronaTable tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #coronaTable tr.header, #coronaTable tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  #coronaTable tr td{
+      /* font-size: 20px; */
+      text-align: center;
+      /* padding: 1.2rem; */
+      border-bottom: 1px solid #e0f2f1;
+  }
+
+
+  @media (max-width:800px) {
+      .header  {
+          max-width: 40vw;
+          margin: auto;
+
+      }
+      #coronaTable{
+        max-width: 50vw;
+        margin: auto;
+        font-size: 0.8rem;
+      }
+
+      
+
+      
+  }
